@@ -1,0 +1,13 @@
+monit.txt
+Created Tue Mar  5 08:36:57 AKST 2019
+by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Monit - utility for monitoring services on a Unix system
+
+
+
+Links
+=====
+Monit
+https://mmonit.com/monit/
