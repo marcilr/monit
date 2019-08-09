@@ -6,6 +6,27 @@ by Raymond E. Marcil <marcilr@gmail.com>
 Monit - utility for monitoring services on a Unix system
 
 
+"Monit is a utility for managing and monitoring processes, programs,
+files, directories and filesystems on a Unix system.  Monit conducts
+automatic maintenance and repair and can execute meaningful causal
+actions in error situations.  E.g. Monit can start a process if it
+does not run, restart a process if it does not respond and stop a
+process if it uses too much resources.  You can use Monit to monitor
+files, directories and filesystems for changes, such as timestamps
+changes, checksum changes or size changes."
+--ubuntu.com
+
+
+Reload configuration
+====================
+To reload the monit configuration run:
+
+# /usr/local/bin/monit -c /etc/monitrc reload
+
+This is benign and rereads is config file and applies new changes.
+
+
+
 Credentials configuration
 =========================
 
@@ -27,5 +48,9 @@ set httpd port 2812 and allow monit:<password>.dev   <=== Customized password
 
 Links
 =====
-Monit
-https://mmonit.com/monit/
+Monit - utility for monitoring services on a Unix system
+http://manpages.ubuntu.com/manpages/bionic/man1/monit.1.html
+
+Monit home
+http://www.mmonit.com/
+
