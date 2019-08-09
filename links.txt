@@ -8,5 +8,8 @@ Monit related links
 
 Links
 =====
+Monit documentation
+https://mmonit.com/monit/documentation/monit.html
+
 Monit - utility for monitoring services on a Unix system
 https://mmonit.com/monit/
