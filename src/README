@@ -5,4 +5,13 @@ Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+set-creds.sh
+  Script to set remote credentials on a set of files
 
+  INPUT:
+    ~/.hosts   List of hosts and credentails to run command on.
+
+  Execute with:
+    ./setcred "old" "new"
+
+    Where "old" is the value to replace with "new"
