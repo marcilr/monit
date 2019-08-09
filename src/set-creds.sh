@@ -13,7 +13,16 @@
 #
 #   Where "old" is the value to replace with "new"
 #
-
+# NOTE: Found that script not as reliable as I'd like.
+#       Often times out a few entries before last.
+#
+# Links
+# =====
+# SSH: Execute Remote Command or Script – Linux
+# Posted on Tuesday December 27th, 2016by admin
+# ShellHacks, Linux Hacks and Guides
+# https://www.shellhacks.com/ssh-execute-remote-command-script-linux/
+#
 
 # =============
 # Configuration
@@ -33,9 +42,15 @@ MONITRC=/etc/monitrc
 CAT=/bin/cat
 CUT=/usr/bin/cut
 GREP=/bin/grep
-HOSTAME=/usr/bin/hostname
+HOSTNAME=/bin/hostname
 LS=/bin/ls
 SSH=/usr/bin/ssh
+
+#
+# noninteractive ssh password provider
+# used to pass credential to ssh
+#
+SSHPASS=/usr/bin/sshpass
 
 #
 # Loop over host list in ~/.hosts
@@ -55,11 +70,10 @@ ${CAT} ${HOSTS} | ${GREP} -v "#" | while read LINE; do
   # Execute remote command
   #${SSH} ${USER}@${HOST} '${LS} -al ${MONITRC"'
 
-  CMD="${SSH} ${USER}@${HOST} '${HOSTNAME}'"
+  CMD="${SSHPASS} -p ${CRED} ${SSH} ${USER}@${HOST} ${HOSTNAME}"
   echo "Executing: ${CMD}"
-#  ${SSH} ${USER}@${HOST} '${HOSTNAME}'
+
+  ${SSHPASS} -p ${CRED} ${SSH} ${USER}@${HOST} ${HOSTNAME} < /dev/null
+
 
 done
-
-
-
