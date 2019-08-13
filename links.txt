@@ -8,8 +8,19 @@ Monit related links
 
 Links
 =====
+How to Install Monit on CentOS 7 / RHEL 7 – A Process Monitoring Tool
+By Raj  Last updated Feb 19, 2018
+https://www.itzgeek.com/how-tos/linux/centos-how-tos/monitor-and-manage-services-with-monit-on-centos-7-rhel-7.html
+
 Monit documentation
 https://mmonit.com/monit/documentation/monit.html
 
+Monit FAQ
+https://mmonit.com/wiki/Monit/FAQ
+
 Monit - utility for monitoring services on a Unix system
 https://mmonit.com/monit/
+
+SOA OIT DNR TFSP
+Monit - utility for monitoring services on a Unix system
+https://dnratwtfsp/Sandboxes/monit
